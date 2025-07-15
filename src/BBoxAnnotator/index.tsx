@@ -64,7 +64,7 @@ const BBoxAnnotator = React.forwardRef<any, Props>(
                 );
             }
         }, [initialEntries]);
-        const [status, setStatus] = useState<'free' | 'input' | 'hold' | 'drag'>('free');
+        const [status, setStatus] = useState<'free' | 'input' | 'hold' | 'drag' | 'resize'>('free');
         const [bBoxAnnotatorStyle, setBboxAnnotatorStyle] = useState<{ width?: number; height?: number }>({});
         const [imageFrameStyle, setImageFrameStyle] = useState<{
             width?: number;
@@ -76,6 +76,10 @@ const BBoxAnnotator = React.forwardRef<any, Props>(
         const labelInputRef = useRef<HTMLDivElement>(null);
         const [draggingId, setDraggingId] = useState<string | null>(null);
         const [dragOffset, setDragOffset] = useState<{ x: number; y: number } | null>(null);
+        const [resizingId, setResizingId] = useState<string | null>(null);
+        const [resizingCorner, setResizingCorner] = useState<'nw' | 'ne' | 'sw' | 'se' | null>(null);
+        const [resizeStart, setResizeStart] = useState<{ x: number; y: number } | null>(null);
+        const [resizeBox, setResizeBox] = useState<EntryType | null>(null);
         useEffect(() => {
             const maxWidth = bBoxAnnotatorRef.current?.offsetWidth || 1;
             const imageElement = new Image();
@@ -145,11 +149,51 @@ const BBoxAnnotator = React.forwardRef<any, Props>(
                                 }),
                             );
                         }
+                        break;
+                    case 'resize':
+                        if (resizingId && resizeStart && resizeBox && resizingCorner) {
+                            const pos = crop(e.pageX, e.pageY);
+                            const dx = pos.x - resizeStart.x;
+                            const dy = pos.y - resizeStart.y;
+                            setEntries((prev) =>
+                                prev.map((entry) => {
+                                    if (entry.id === resizingId) {
+                                        let { left, top, width, height } = resizeBox;
+                                        const maxWidth = (imageFrameStyle.width || 0);
+                                        const maxHeight = (imageFrameStyle.height || 0);
+                                        switch (resizingCorner) {
+                                            case 'se':
+                                                width = Math.min(Math.max(width + dx, 1), maxWidth - left);
+                                                height = Math.min(Math.max(height + dy, 1), maxHeight - top);
+                                                break;
+                                            case 'sw':
+                                                left = Math.min(Math.max(left + dx, 0), left + width - 1);
+                                                width = Math.min(Math.max(width - dx, 1), maxWidth - left);
+                                                height = Math.min(Math.max(height + dy, 1), maxHeight - top);
+                                                break;
+                                            case 'ne':
+                                                top = Math.min(Math.max(top + dy, 0), top + height - 1);
+                                                height = Math.min(Math.max(height - dy, 1), maxHeight - top);
+                                                width = Math.min(Math.max(width + dx, 1), maxWidth - left);
+                                                break;
+                                            case 'nw':
+                                                left = Math.min(Math.max(left + dx, 0), left + width - 1);
+                                                top = Math.min(Math.max(top + dy, 0), top + height - 1);
+                                                width = Math.min(Math.max(width - dx, 1), maxWidth - left);
+                                                height = Math.min(Math.max(height - dy, 1), maxHeight - top);
+                                                break;
+                                        }
+                                        return { ...entry, left, top, width, height };
+                                    }
+                                    return entry;
+                                }),
+                            );
+                        }
                 }
             };
             window.addEventListener('mousemove', mouseMoveHandler);
             return () => window.removeEventListener('mousemove', mouseMoveHandler);
-        }, [status, draggingId, dragOffset, imageFrameStyle]);
+        }, [status, draggingId, dragOffset, imageFrameStyle, resizeStart, resizeBox, resizingId, resizingCorner]);
 
         useEffect(() => {
             const mouseUpHandler = (e: MouseEvent) => {
@@ -163,11 +207,18 @@ const BBoxAnnotator = React.forwardRef<any, Props>(
                         setStatus('free');
                         setDraggingId(null);
                         setDragOffset(null);
+                        break;
+                    case 'resize':
+                        setStatus('free');
+                        setResizingId(null);
+                        setResizingCorner(null);
+                        setResizeStart(null);
+                        setResizeBox(null);
                 }
             };
             window.addEventListener('mouseup', mouseUpHandler);
             return () => window.removeEventListener('mouseup', mouseUpHandler);
-        }, [status, labelInputRef, draggingId, dragOffset]);
+        }, [status, labelInputRef, draggingId, dragOffset, resizingId, resizingCorner, resizeStart, resizeBox]);
 
         const addEntry = (label: string) => {
             setEntries([...entries, { ...rect, label, id: uuid(), showCloseButton: false }]);
@@ -316,6 +367,87 @@ const BBoxAnnotator = React.forwardRef<any, Props>(
                                     </div>
                                 </div>
                             ) : null}
+                            {/* resize handles */}
+                            <div
+                                style={{
+                                    position: 'absolute',
+                                    left: '-4px',
+                                    top: '-4px',
+                                    width: '8px',
+                                    height: '8px',
+                                    background: 'rgb(255,0,0)',
+                                    cursor: 'nwse-resize',
+                                }}
+                                onMouseDown={(e) => {
+                                    e.stopPropagation();
+                                    const pos = crop(e.pageX, e.pageY);
+                                    setResizingId(entry.id);
+                                    setResizingCorner('nw');
+                                    setResizeStart(pos);
+                                    setResizeBox({ left: entry.left, top: entry.top, width: entry.width, height: entry.height, label: entry.label });
+                                    setStatus('resize');
+                                }}
+                            />
+                            <div
+                                style={{
+                                    position: 'absolute',
+                                    right: '-4px',
+                                    top: '-4px',
+                                    width: '8px',
+                                    height: '8px',
+                                    background: 'rgb(255,0,0)',
+                                    cursor: 'nesw-resize',
+                                }}
+                                onMouseDown={(e) => {
+                                    e.stopPropagation();
+                                    const pos = crop(e.pageX, e.pageY);
+                                    setResizingId(entry.id);
+                                    setResizingCorner('ne');
+                                    setResizeStart(pos);
+                                    setResizeBox({ left: entry.left, top: entry.top, width: entry.width, height: entry.height, label: entry.label });
+                                    setStatus('resize');
+                                }}
+                            />
+                            <div
+                                style={{
+                                    position: 'absolute',
+                                    left: '-4px',
+                                    bottom: '-4px',
+                                    width: '8px',
+                                    height: '8px',
+                                    background: 'rgb(255,0,0)',
+                                    cursor: 'nesw-resize',
+                                }}
+                                onMouseDown={(e) => {
+                                    e.stopPropagation();
+                                    const pos = crop(e.pageX, e.pageY);
+                                    setResizingId(entry.id);
+                                    setResizingCorner('sw');
+                                    setResizeStart(pos);
+                                    setResizeBox({ left: entry.left, top: entry.top, width: entry.width, height: entry.height, label: entry.label });
+                                    setStatus('resize');
+                                }}
+                            />
+                            <div
+                                style={{
+                                    position: 'absolute',
+                                    right: '-4px',
+                                    bottom: '-4px',
+                                    width: '8px',
+                                    height: '8px',
+                                    background: 'rgb(255,0,0)',
+                                    cursor: 'nwse-resize',
+                                }}
+                                onMouseDown={(e) => {
+                                    e.stopPropagation();
+                                    const pos = crop(e.pageX, e.pageY);
+                                    setResizingId(entry.id);
+                                    setResizingCorner('se');
+                                    setResizeStart(pos);
+                                    setResizeBox({ left: entry.left, top: entry.top, width: entry.width, height: entry.height, label: entry.label });
+                                    setStatus('resize');
+                                }}
+                            />
                             <div style={{ overflow: 'hidden' }}>{entry.label}</div>
                         </div>
                     ))}
