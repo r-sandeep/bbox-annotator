@@ -1,0 +1,337 @@
+image_id,image_filename,url,label,category,locator,prompt,x1,y1,x2,y2
+1,www.amazon.com_000_clean.png,https://www.amazon.com,Prime Day is July 8 to 11,Banner/Alert,Prime Day banner at the top of the page,Click element: Prime Day banner at the top of the page,44,84,1518,342
+1,www.amazon.com_000_clean.png,https://www.amazon.com,Join Prime,Button,Join Prime button within the Prime Day banner,Click element: Join Prime button within the Prime Day banner,374,250,470,282
+1,www.amazon.com_000_clean.png,https://www.amazon.com,Sign in,Button,Sign in button in the top right corner,Click element: Sign in button in the top right corner,1310,80,1354,100
+1,www.amazon.com_000_clean.png,https://www.amazon.com,Cart,Link,Cart link in the top right corner,Click element: Cart link in the top right corner,1534,28,1562,44
+1,www.amazon.com_000_clean.png,https://www.amazon.com,Pre-loved jewelry,Text Area,Heading for the pre-loved jewelry section,Click element: Heading for the pre-loved jewelry section,80,370,254,396
+1,www.amazon.com_000_clean.png,https://www.amazon.com,Cartier,Image,Image representing Cartier jewelry,Click element: Image representing Cartier jewelry,84,410,230,518
+1,www.amazon.com_000_clean.png,https://www.amazon.com,Warm-weather looks,Text Area,Heading for the warm-weather looks section,Click element: Heading for the warm-weather looks section,450,370,654,394
+1,www.amazon.com_000_clean.png,https://www.amazon.com,Bottoms,Link,Link to 'Bottoms' within the warm-weather looks section,Click element: Link to 'Bottoms' within the warm-weather looks section,452,522,496,538
+1,www.amazon.com_000_clean.png,https://www.amazon.com,Dresses for sunny days,Text Area,Heading for the dresses section,Click element: Heading for the dresses section,820,370,1060,394
+1,www.amazon.com_000_clean.png,https://www.amazon.com,Floral,Link,Link to 'Floral' dresses,Click element: Link to 'Floral' dresses,822,522,852,538
+1,www.amazon.com_000_clean.png,https://www.amazon.com,Sign in for the best experience,Text Area,Text prompting sign-in for a better experience,Click element: Text prompting sign-in for a better experience,1194,370,1498,396
+1,www.amazon.com_000_clean.png,https://www.amazon.com,Sign in securely,Button,Button to sign in securely,Click element: Button to sign in securely,1194,410,1502,438
+1,www.amazon.com_000_clean.png,https://www.amazon.com,Prime members save up to 80%,Banner/Alert,Amazon Pharmacy promotion banner,Click element: Amazon Pharmacy promotion banner,1194,518,1498,768
+1,www.amazon.com_000_clean.png,https://www.amazon.com,Now on Amazon: Rebag,Text Area,Heading for the Rebag section,Click element: Heading for the Rebag section,82,808,322,836
+1,www.amazon.com_000_clean.png,https://www.amazon.com,Gear up for outdoor fun,Text Area,Heading for the outdoor fun section,Click element: Heading for the outdoor fun section,450,808,688,836
+1,www.amazon.com_000_clean.png,https://www.amazon.com,Summer beauty trends,Text Area,Heading for the summer beauty trends section,Click element: Heading for the summer beauty trends section,824,808,1048,836
+1,www.amazon.com_000_clean.png,https://www.amazon.com,Refresh your beauty routine,Text Area,Heading for the beauty routine section,Click element: Heading for the beauty routine section,1194,808,1472,836
+1,www.amazon.com_000_clean.png,https://www.amazon.com,All,Menu Item,All menu item in the top left corner,Click element: All menu item in the top left corner,20,68,60,92
+1,www.amazon.com_000_clean.png,https://www.amazon.com,Amazon Haul,Menu Item,Amazon Haul menu item,Click element: Amazon Haul menu item,76,64,168,92
+1,www.amazon.com_000_clean.png,https://www.amazon.com,Medical Care,Menu Item,Medical Care menu item,Click element: Medical Care menu item,172,64,286,94
+7,www.amazon.com_000_font_clean.png,https://www.amazon.com,Amazon logo,Image,Amazon logo on top left,Click element: Amazon logo on top left,20,16,116,44
+7,www.amazon.com_000_font_clean.png,https://www.amazon.com,Search Amazon,Input Field,Search bar in the header,Click element: Search bar in the header,390,12,1120,48
+7,www.amazon.com_000_font_clean.png,https://www.amazon.com,"Hello, sign in",Link,Sign-in link in the header,Click element: Sign-in link in the header,1266,16,1334,32
+7,www.amazon.com_000_font_clean.png,https://www.amazon.com,Prime Day is July 8 to 11,Banner/Alert,Prime Day banner,Click element: Prime Day banner,40,96,1518,342
+7,www.amazon.com_000_font_clean.png,https://www.amazon.com,Join Prime,Button,Join Prime button,Click element: Join Prime button,374,250,470,280
+7,www.amazon.com_000_font_clean.png,https://www.amazon.com,Pre-loved jewelry,Text Area,Section title 'Pre-loved jewelry',Click element: Section title 'Pre-loved jewelry',80,370,274,394
+7,www.amazon.com_000_font_clean.png,https://www.amazon.com,Cartier,Image,Cartier jewelry image,Click element: Cartier jewelry image,82,406,230,518
+7,www.amazon.com_000_font_clean.png,https://www.amazon.com,Warm-weather looks,Text Area,Section title 'Warm-weather looks',Click element: Section title 'Warm-weather looks',452,370,678,394
+7,www.amazon.com_000_font_clean.png,https://www.amazon.com,Bottoms,Link,Bottoms link within 'Warm-weather looks',Click element: Bottoms link within 'Warm-weather looks',452,522,498,538
+7,www.amazon.com_000_font_clean.png,https://www.amazon.com,Dresses for sunny days,Text Area,Section title 'Dresses for sunny days',Click element: Section title 'Dresses for sunny days',820,370,1070,394
+7,www.amazon.com_000_font_clean.png,https://www.amazon.com,Floral,Link,Floral dresses link,Click element: Floral dresses link,822,406,1132,522
+7,www.amazon.com_000_font_clean.png,https://www.amazon.com,Sign in for the best experience,Text Area,Sign-in prompt text,Click element: Sign-in prompt text,1266,116,1342,132
+7,www.amazon.com_000_font_clean.png,https://www.amazon.com,Sign in securely,Button,Sign-in button,Click element: Sign-in button,1266,76,1406,104
+7,www.amazon.com_000_font_clean.png,https://www.amazon.com,Prime members save up to 80%,Banner/Alert,Amazon Pharmacy Prime member discount banner,Click element: Amazon Pharmacy Prime member discount banner,1194,514,1498,768
+7,www.amazon.com_000_font_clean.png,https://www.amazon.com,Now on Amazon: Rebag,Text Area,Section title 'Now on Amazon: Rebag',Click element: Section title 'Now on Amazon: Rebag',80,808,338,836
+7,www.amazon.com_000_font_clean.png,https://www.amazon.com,Gear up for outdoor fun,Text Area,Section title 'Gear up for outdoor fun',Click element: Section title 'Gear up for outdoor fun',452,808,712,836
+7,www.amazon.com_000_font_clean.png,https://www.amazon.com,Summer beauty trends,Text Area,Section title 'Summer beauty trends',Click element: Section title 'Summer beauty trends',822,808,1068,836
+7,www.amazon.com_000_font_clean.png,https://www.amazon.com,Refresh your beauty routine,Text Area,Section title 'Refresh your beauty routine',Click element: Section title 'Refresh your beauty routine',1194,808,1498,836
+7,www.amazon.com_000_font_clean.png,https://www.amazon.com,Returns & Orders,Link,Returns & Orders link in the header,Click element: Returns & Orders link in the header,1402,16,1478,44
+7,www.amazon.com_000_font_clean.png,https://www.amazon.com,Cart,Link,Shopping cart icon/link in the header,Click element: Shopping cart icon/link in the header,1502,24,1518,40
+7,www.amazon.com_000_font_clean.png,https://www.amazon.com,Shop all,Button,Shop all button under 'Warm-weather looks',Click element: Shop all button under 'Warm-weather looks',452,732,498,748
+7,www.amazon.com_000_font_clean.png,https://www.amazon.com,Shop now,Button,Shop now button under 'Dresses for sunny days',Click element: Shop now button under 'Dresses for sunny days',822,732,880,748
+7,www.amazon.com_000_font_clean.png,https://www.amazon.com,Sponsored,Badge/Chip,Sponsored badge on the Amazon Pharmacy banner,Click element: Sponsored badge on the Amazon Pharmacy banner,1422,776,1482,790
+19,www.amazon.com_001_clean.png,https://www.amazon.com,Fendi,Link,Fendi link in the top row,Click element: Fendi link in the top row,82,64,112,80
+19,www.amazon.com_001_clean.png,https://www.amazon.com,Louis Vuitton,Link,Louis Vuitton link in the top row,Click element: Louis Vuitton link in the top row,246,64,314,76
+19,www.amazon.com_001_clean.png,https://www.amazon.com,Fishing,Link,Fishing link in the top row,Click element: Fishing link in the top row,452,64,490,76
+19,www.amazon.com_001_clean.png,https://www.amazon.com,Golf,Link,Golf link in the top row,Click element: Golf link in the top row,614,64,638,80
+19,www.amazon.com_001_clean.png,https://www.amazon.com,Natural curls,Link,Natural curls link in the top row,Click element: Natural curls link in the top row,822,64,888,80
+19,www.amazon.com_001_clean.png,https://www.amazon.com,Beach essentials,Link,Beach essentials link in the top row,Click element: Beach essentials link in the top row,984,64,1076,80
+19,www.amazon.com_001_clean.png,https://www.amazon.com,Skincare,Link,Skincare link in the top row,Click element: Skincare link in the top row,1194,64,1238,76
+19,www.amazon.com_001_clean.png,https://www.amazon.com,Makeup,Link,Makeup link in the top row,Click element: Makeup link in the top row,1354,64,1398,80
+19,www.amazon.com_001_clean.png,https://www.amazon.com,Hermes,Link,Hermes link in the second row,Click element: Hermes link in the second row,82,222,238,238
+19,www.amazon.com_001_clean.png,https://www.amazon.com,Jewelry,Link,Jewelry link in the second row,Click element: Jewelry link in the second row,246,222,286,238
+19,www.amazon.com_001_clean.png,https://www.amazon.com,Paddlesports,Link,Paddlesports link in the second row,Click element: Paddlesports link in the second row,452,220,618,238
+19,www.amazon.com_001_clean.png,https://www.amazon.com,Pickleball,Link,Pickleball link in the second row,Click element: Pickleball link in the second row,614,220,666,238
+19,www.amazon.com_001_clean.png,https://www.amazon.com,Glowing skin,Link,Glowing skin link in the second row,Click element: Glowing skin link in the second row,822,222,888,238
+19,www.amazon.com_001_clean.png,https://www.amazon.com,Wedding guest glam,Link,Wedding guest glam link in the second row,Click element: Wedding guest glam link in the second row,984,220,1092,238
+19,www.amazon.com_001_clean.png,https://www.amazon.com,Fragrances,Link,Fragrances link in the second row,Click element: Fragrances link in the second row,1194,226,1254,238
+19,www.amazon.com_001_clean.png,https://www.amazon.com,New arrivals,Link,New arrivals link in the second row,Click element: New arrivals link in the second row,1354,220,1422,238
+19,www.amazon.com_001_clean.png,https://www.amazon.com,Shop pre-loved finds,Button,Shop pre-loved finds button,Click element: Shop pre-loved finds button,82,270,200,290
+19,www.amazon.com_001_clean.png,https://www.amazon.com,Shop all sports & outdoors,Button,Shop all sports & outdoors button,Click element: Shop all sports & outdoors button,452,272,606,288
+19,www.amazon.com_001_clean.png,https://www.amazon.com,Shop now,Button,Shop now button,Click element: Shop now button,824,272,880,286
+19,www.amazon.com_001_clean.png,https://www.amazon.com,Shop Luxury Stores,Button,Shop Luxury Stores button,Click element: Shop Luxury Stores button,1194,272,1306,286
+19,www.amazon.com_001_clean.png,https://www.amazon.com,Crocs,Image,Image of black Crocs in best sellers,Click element: Image of black Crocs in best sellers,84,386,366,586
+19,www.amazon.com_001_clean.png,https://www.amazon.com,Sunglasses,Image,Image of sunglasses in best sellers,Click element: Image of sunglasses in best sellers,872,386,1084,586
+19,www.amazon.com_001_clean.png,https://www.amazon.com,White T-shirt,Image,Image of a white t-shirt in best sellers,Click element: Image of a white t-shirt in best sellers,720,386,880,586
+19,www.amazon.com_001_clean.png,https://www.amazon.com,Black Shorts,Image,Image of black shorts in best sellers,Click element: Image of black shorts in best sellers,1266,386,1370,586
+19,www.amazon.com_001_clean.png,https://www.amazon.com,Celsius,Image,Image of Celsius drinks in best sellers,Click element: Image of Celsius drinks in best sellers,88,688,358,900
+25,www.amazon.com_001_font_clean.png,https://www.amazon.com,Fendi,Link,Fendi link in the top row,Click element: Fendi link in the top row,82,64,216,80
+25,www.amazon.com_001_font_clean.png,https://www.amazon.com,Louis Vuitton,Link,Louis Vuitton link in the top row,Click element: Louis Vuitton link in the top row,246,64,318,80
+25,www.amazon.com_001_font_clean.png,https://www.amazon.com,Fishing,Link,Fishing link in the top row,Click element: Fishing link in the top row,452,64,492,80
+25,www.amazon.com_001_font_clean.png,https://www.amazon.com,Golf,Link,Golf link in the top row,Click element: Golf link in the top row,614,64,638,80
+25,www.amazon.com_001_font_clean.png,https://www.amazon.com,Natural curls,Link,Natural curls link in the top row,Click element: Natural curls link in the top row,822,64,896,80
+25,www.amazon.com_001_font_clean.png,https://www.amazon.com,Beach essentials,Link,Beach essentials link in the top row,Click element: Beach essentials link in the top row,984,64,1076,80
+25,www.amazon.com_001_font_clean.png,https://www.amazon.com,Skincare,Link,Skincare link in the top row,Click element: Skincare link in the top row,1194,64,1242,80
+25,www.amazon.com_001_font_clean.png,https://www.amazon.com,Makeup,Link,Makeup link in the top row,Click element: Makeup link in the top row,1354,64,1398,80
+25,www.amazon.com_001_font_clean.png,https://www.amazon.com,Hermes,Link,Hermes link in the second row,Click element: Hermes link in the second row,82,226,224,242
+25,www.amazon.com_001_font_clean.png,https://www.amazon.com,Jewelry,Link,Jewelry link in the second row,Click element: Jewelry link in the second row,246,226,290,242
+25,www.amazon.com_001_font_clean.png,https://www.amazon.com,Paddlesports,Link,Paddlesports link in the second row,Click element: Paddlesports link in the second row,450,222,524,238
+25,www.amazon.com_001_font_clean.png,https://www.amazon.com,Pickleball,Link,Pickleball link in the second row,Click element: Pickleball link in the second row,614,226,666,240
+25,www.amazon.com_001_font_clean.png,https://www.amazon.com,Glowing skin,Link,Glowing skin link in the second row,Click element: Glowing skin link in the second row,822,226,888,242
+25,www.amazon.com_001_font_clean.png,https://www.amazon.com,Wedding guest glam,Link,Wedding guest glam link in the second row,Click element: Wedding guest glam link in the second row,984,226,1096,242
+25,www.amazon.com_001_font_clean.png,https://www.amazon.com,Fragrances,Link,Fragrances link in the second row,Click element: Fragrances link in the second row,1194,226,1254,242
+25,www.amazon.com_001_font_clean.png,https://www.amazon.com,New arrivals,Link,New arrivals link in the second row,Click element: New arrivals link in the second row,1354,222,1426,238
+25,www.amazon.com_001_font_clean.png,https://www.amazon.com,Shop pre-loved finds,Button,Shop pre-loved finds button,Click element: Shop pre-loved finds button,82,274,208,290
+25,www.amazon.com_001_font_clean.png,https://www.amazon.com,Shop all sports & outdoor,Button,Shop all sports & outdoor button,Click element: Shop all sports & outdoor button,452,272,614,290
+25,www.amazon.com_001_font_clean.png,https://www.amazon.com,Shop now,Button,Shop now button,Click element: Shop now button,824,270,880,290
+25,www.amazon.com_001_font_clean.png,https://www.amazon.com,Shop Luxury Stores,Button,Shop Luxury Stores button,Click element: Shop Luxury Stores button,1194,274,1314,290
+25,www.amazon.com_001_font_clean.png,https://www.amazon.com,Crocs,Image,Image of black Crocs in best sellers section,Click element: Image of black Crocs in best sellers section,86,386,358,586
+25,www.amazon.com_001_font_clean.png,https://www.amazon.com,White Sneaker,Image,Image of white sneaker in best sellers section,Click element: Image of white sneaker in best sellers section,872,386,1088,586
+25,www.amazon.com_001_font_clean.png,https://www.amazon.com,Black Socks,Image,Image of black socks in best sellers section,Click element: Image of black socks in best sellers section,872,386,1084,582
+25,www.amazon.com_001_font_clean.png,https://www.amazon.com,Celsius,Image,Image of Celsius drinks in best sellers section,Click element: Image of Celsius drinks in best sellers section,88,692,358,900
+25,www.amazon.com_001_font_clean.png,https://www.amazon.com,Nespresso Capsules,Image,Image of Nespresso capsules in best sellers section,Click element: Image of Nespresso capsules in best sellers section,394,844,442,884
+37,www.amazon.com_002_clean.png,https://www.amazon.com,School supplies,Text,Text label under school supplies image,Click element: Text label under school supplies image,82,204,168,220
+37,www.amazon.com_002_clean.png,https://www.amazon.com,Backpacks,Text,Text label under backpacks image,Click element: Text label under backpacks image,246,204,302,220
+37,www.amazon.com_002_clean.png,https://www.amazon.com,Featured in Kitchen,Text,Heading for the 'Featured in Kitchen' section,Click element: Heading for the 'Featured in Kitchen' section,454,52,646,76
+37,www.amazon.com_002_clean.png,https://www.amazon.com,Grades 1-2,Text,Text label under Grades 1-2 image,Click element: Text label under Grades 1-2 image,822,204,884,220
+37,www.amazon.com_002_clean.png,https://www.amazon.com,Grades 3-5,Text,Text label under Grades 3-5 image,Click element: Text label under Grades 3-5 image,984,204,1044,220
+37,www.amazon.com_002_clean.png,https://www.amazon.com,Under $25,Text,Text label under 'Under $25' price range,Click element: Text label under 'Under $25' price range,1192,218,1250,234
+37,www.amazon.com_002_clean.png,https://www.amazon.com,Under $50,Text,Text label under 'Under $50' price range,Click element: Text label under 'Under $50' price range,1354,366,1418,382
+37,www.amazon.com_002_clean.png,https://www.amazon.com,Shop Back to School,Button,Button to shop back to school,Click element: Button to shop back to school,80,414,204,434
+37,www.amazon.com_002_clean.png,https://www.amazon.com,Shop now,Button,Button to shop now,Click element: Button to shop now,1194,414,1250,430
+37,www.amazon.com_002_clean.png,https://www.amazon.com,Best Sellers in Computers & Accessories,Text,Heading for 'Best Sellers in Computers & Accessories' section,Click element: Heading for 'Best Sellers in Computers & Accessories' section,82,494,494,518
+37,www.amazon.com_002_clean.png,https://www.amazon.com,Ailun,Text,Brand name 'Ailun' on screen protector packaging,Click element: Brand name 'Ailun' on screen protector packaging,298,538,338,558
+37,www.amazon.com_002_clean.png,https://www.amazon.com,iPad,Image,Image of an iPad,Click element: Image of an iPad,610,526,804,732
+37,www.amazon.com_002_clean.png,https://www.amazon.com,Best Sellers in Home & Kitchen,Text,Heading for 'Best Sellers in Home & Kitchen' section,Click element: Heading for 'Best Sellers in Home & Kitchen' section,82,796,394,824
+37,www.amazon.com_002_clean.png,https://www.amazon.com,TERRO,Text,Brand name 'TERRO' on liquid ant baits,Click element: Brand name 'TERRO' on liquid ant baits,306,836,366,856
+37,www.amazon.com_002_clean.png,https://www.amazon.com,Glass Screen Protector,Image,Image of a glass screen protector,Click element: Image of a glass screen protector,254,526,458,732
+37,www.amazon.com_002_clean.png,https://www.amazon.com,Grades 6-8,Text,Text label under Grades 6-8 image,Click element: Text label under Grades 6-8 image,822,366,882,382
+37,www.amazon.com_002_clean.png,https://www.amazon.com,Grades 9-12,Text,Text label under Grades 9-12 image,Click element: Text label under Grades 9-12 image,984,366,1052,382
+37,www.amazon.com_002_clean.png,https://www.amazon.com,Under $75,Text,Text label under 'Under $75' price range,Click element: Text label under 'Under $75' price range,1194,366,1250,382
+37,www.amazon.com_002_clean.png,https://www.amazon.com,Under $100,Text,Text label under 'Under $100' price range,Click element: Text label under 'Under $100' price range,1354,366,1418,382
+37,www.amazon.com_002_clean.png,https://www.amazon.com,School tech,Text,Text label under school tech image,Click element: Text label under school tech image,82,366,144,382
+37,www.amazon.com_002_clean.png,https://www.amazon.com,Fashion,Text,Text label under fashion image,Click element: Text label under fashion image,246,366,290,382
+43,www.amazon.com_002_font_clean.png,https://www.amazon.com,School supplies,Text Area,School supplies text label under 'School essentials',Click element: School supplies text label under 'School essentials',82,204,168,220
+43,www.amazon.com_002_font_clean.png,https://www.amazon.com,Backpacks,Text Area,Backpacks text label under 'School essentials',Click element: Backpacks text label under 'School essentials',246,204,302,220
+43,www.amazon.com_002_font_clean.png,https://www.amazon.com,Featured in Kitchen,Banner/Alert,Featured in Kitchen banner,Click element: Featured in Kitchen banner,454,52,646,76
+43,www.amazon.com_002_font_clean.png,https://www.amazon.com,Grades 1-2,Text Area,Grades 1-2 text label under 'Shop by grade',Click element: Grades 1-2 text label under 'Shop by grade',822,204,882,220
+43,www.amazon.com_002_font_clean.png,https://www.amazon.com,Grades 3-5,Text Area,Grades 3-5 text label under 'Shop by grade',Click element: Grades 3-5 text label under 'Shop by grade',984,204,1048,220
+43,www.amazon.com_002_font_clean.png,https://www.amazon.com,Under $25,Text Area,Under $25 text label under 'Shop college must-haves by price',Click element: Under $25 text label under 'Shop college must-haves by price',1194,218,1254,238
+43,www.amazon.com_002_font_clean.png,https://www.amazon.com,Under $50,Text Area,Under $50 text label under 'Shop college must-haves by price',Click element: Under $50 text label under 'Shop college must-haves by price',1354,218,1418,238
+43,www.amazon.com_002_font_clean.png,https://www.amazon.com,School tech,Text Area,School tech text label under 'School essentials',Click element: School tech text label under 'School essentials',82,366,148,382
+43,www.amazon.com_002_font_clean.png,https://www.amazon.com,Fashion,Text Area,Fashion text label under 'School essentials',Click element: Fashion text label under 'School essentials',246,366,290,382
+43,www.amazon.com_002_font_clean.png,https://www.amazon.com,Shop Back to School,Button,Shop Back to School button under 'School essentials',Click element: Shop Back to School button under 'School essentials',82,414,204,430
+43,www.amazon.com_002_font_clean.png,https://www.amazon.com,Shop now,Button,Shop now button under 'Featured in Kitchen',Click element: Shop now button under 'Featured in Kitchen',454,414,512,430
+43,www.amazon.com_002_font_clean.png,https://www.amazon.com,Grades 6-8,Text Area,Grades 6-8 text label under 'Shop by grade',Click element: Grades 6-8 text label under 'Shop by grade',822,366,884,382
+43,www.amazon.com_002_font_clean.png,https://www.amazon.com,Grades 9-12,Text Area,Grades 9-12 text label under 'Shop by grade',Click element: Grades 9-12 text label under 'Shop by grade',984,366,1052,382
+43,www.amazon.com_002_font_clean.png,https://www.amazon.com,Under $75,Text Area,Under $75 text label under 'Shop college must-haves by price',Click element: Under $75 text label under 'Shop college must-haves by price',1194,366,1254,382
+43,www.amazon.com_002_font_clean.png,https://www.amazon.com,Under $100,Text Area,Under $100 text label under 'Shop college must-haves by price',Click element: Under $100 text label under 'Shop college must-haves by price',1354,366,1422,382
+43,www.amazon.com_002_font_clean.png,https://www.amazon.com,Ailun,Image,Ailun screen protector image,Click element: Ailun screen protector image,254,526,458,732
+43,www.amazon.com_002_font_clean.png,https://www.amazon.com,iPad,Image,iPad image in 'Best Sellers in Computers & Accessories',Click element: iPad image in 'Best Sellers in Computers & Accessories',618,526,800,732
+43,www.amazon.com_002_font_clean.png,https://www.amazon.com,GLASS,Image,GLASS screen protector image,Click element: GLASS screen protector image,84,526,458,736
+43,www.amazon.com_002_font_clean.png,https://www.amazon.com,TERRO,Image,TERRO liquid ant baits image,Click element: TERRO liquid ant baits image,298,828,450,900
+43,www.amazon.com_002_font_clean.png,https://www.amazon.com,Pink water bottle,Image,Pink water bottle image in 'Best Sellers in Home & Kitchen',Click element: Pink water bottle image in 'Best Sellers in Home & Kitchen',606,828,740,900
+43,www.amazon.com_002_font_clean.png,https://www.amazon.com,Glass food containers,Image,Glass food containers image in 'Best Sellers in Home & Kitchen',Click element: Glass food containers image in 'Best Sellers in Home & Kitchen',82,828,286,900
+43,www.amazon.com_002_font_clean.png,https://www.amazon.com,OFF,Badge/Chip,OFF badge on a product image,Click element: OFF badge on a product image,1450,836,1502,848
+43,www.amazon.com_002_font_clean.png,https://www.amazon.com,USB-C Hub,Image,USB-C Hub image in 'Featured in Kitchen',Click element: USB-C Hub image in 'Featured in Kitchen',638,132,752,322
+43,www.amazon.com_002_font_clean.png,https://www.amazon.com,Headphones,Image,Headphones image in 'Shop by grade',Click element: Headphones image in 'Shop by grade',824,88,968,204
+55,www.amazon.com_003_clean.png,https://www.amazon.com,0% APR for 60 months,Banner/Alert,Promotional banner for Nissan financing,Click element: Promotional banner for Nissan financing,306,172,1278,426
+55,www.amazon.com_003_clean.png,https://www.amazon.com,Shop Now,Button,Button within the Nissan financing banner,Click element: Button within the Nissan financing banner,430,350,554,382
+55,www.amazon.com_003_clean.png,https://www.amazon.com,Nissan Pathfinder,Text,Text label for the Nissan Pathfinder vehicle,Click element: Text label for the Nissan Pathfinder vehicle,712,362,852,398
+55,www.amazon.com_003_clean.png,https://www.amazon.com,Nissan Rogue,Text,Text label for the Nissan Rogue vehicle,Click element: Text label for the Nissan Rogue vehicle,1008,366,1092,382
+55,www.amazon.com_003_clean.png,https://www.amazon.com,Up to 50% off fashion on Haul,Banner/Alert,Banner promoting fashion deals on Haul,Click element: Banner promoting fashion deals on Haul,60,446,410,844
+55,www.amazon.com_003_clean.png,https://www.amazon.com,Styles under $5,Card,Card displaying styles under $5,Click element: Card displaying styles under $5,82,502,230,638
+55,www.amazon.com_003_clean.png,https://www.amazon.com,Women's fashion,Card,Card displaying women's fashion items,Click element: Card displaying women's fashion items,246,502,390,614
+55,www.amazon.com_003_clean.png,https://www.amazon.com,Shop A+ tech for students,Banner/Alert,Banner promoting tech deals for students,Click element: Banner promoting tech deals for students,426,442,800,864
+55,www.amazon.com_003_clean.png,https://www.amazon.com,Under $50,Card,Card displaying items under $50,Click element: Card displaying items under $50,450,502,594,638
+55,www.amazon.com_003_clean.png,https://www.amazon.com,Under $100,Card,Card displaying items under $100,Click element: Card displaying items under $100,614,502,768,638
+55,www.amazon.com_003_clean.png,https://www.amazon.com,Small space solutions,Banner/Alert,Banner promoting small space furniture and decor,Click element: Banner promoting small space furniture and decor,824,502,1132,808
+55,www.amazon.com_003_clean.png,https://www.amazon.com,Shop small space furniture & decor,Button,Button to shop small space solutions,Click element: Button to shop small space solutions,824,828,1024,844
+55,www.amazon.com_003_clean.png,https://www.amazon.com,School tech,Banner/Alert,Banner promoting school tech deals,Click element: Banner promoting school tech deals,1166,442,1522,864
+55,www.amazon.com_003_clean.png,https://www.amazon.com,Computers & Tablets,Card,Card displaying computers and tablets,Click element: Card displaying computers and tablets,1194,502,1334,638
+55,www.amazon.com_003_clean.png,https://www.amazon.com,Audio,Card,Card displaying audio products,Click element: Card displaying audio products,1354,502,1506,638
+55,www.amazon.com_003_clean.png,https://www.amazon.com,Men's fashion,Card,Card displaying men's fashion items,Click element: Card displaying men's fashion items,82,662,234,776
+55,www.amazon.com_003_clean.png,https://www.amazon.com,Best sellers,Card,Card displaying best selling items,Click element: Card displaying best selling items,246,662,394,776
+55,www.amazon.com_003_clean.png,https://www.amazon.com,Shop early Prime Day deals,Button,Button to shop early Prime Day deals,Click element: Button to shop early Prime Day deals,82,828,246,844
+55,www.amazon.com_003_clean.png,https://www.amazon.com,Under $250,Card,Card displaying items under $250,Click element: Card displaying items under $250,450,658,594,776
+55,www.amazon.com_003_clean.png,https://www.amazon.com,Under $300,Card,Card displaying items under $300,Click element: Card displaying items under $300,614,662,768,776
+55,www.amazon.com_003_clean.png,https://www.amazon.com,Accessories,Card,Card displaying accessories,Click element: Card displaying accessories,1190,662,1334,780
+55,www.amazon.com_003_clean.png,https://www.amazon.com,4+ star picks,Card,Card displaying 4+ star rated products,Click element: Card displaying 4+ star rated products,1354,662,1502,776
+55,www.amazon.com_003_clean.png,https://www.amazon.com,Stain & Soap Scum Resistant,Text,Text describing the product feature,Click element: Text describing the product feature,306,20,410,56
+55,www.amazon.com_003_clean.png,https://www.amazon.com,Premium PVA,Text,Text indicating the product material,Click element: Text indicating the product material,968,112,1060,128
+55,www.amazon.com_003_clean.png,https://www.amazon.com,FOR ZERO,Text,Text associated with the 'TRAP & LO' technology,Click element: Text associated with the 'TRAP & LO' technology,1442,44,1502,56
+61,www.amazon.com_003_font_clean.png,https://www.amazon.com,0% APR for 60 months,Banner/Alert,Promotional banner offering financing options,Click element: Promotional banner offering financing options,306,172,1278,426
+61,www.amazon.com_003_font_clean.png,https://www.amazon.com,SHOP NOW,Button,Button within the financing banner,Click element: Button within the financing banner,430,350,554,382
+61,www.amazon.com_003_font_clean.png,https://www.amazon.com,Nissan Pathfinder,Image,Image of a Nissan Pathfinder vehicle,Click element: Image of a Nissan Pathfinder vehicle,674,216,944,346
+61,www.amazon.com_003_font_clean.png,https://www.amazon.com,Nissan Rogue,Image,Image of a Nissan Rogue vehicle,Click element: Image of a Nissan Rogue vehicle,308,174,1278,426
+61,www.amazon.com_003_font_clean.png,https://www.amazon.com,Sponsored,Badge/Chip,Sponsored badge near the Nissan vehicles,Click element: Sponsored badge near the Nissan vehicles,1194,426,1258,440
+61,www.amazon.com_003_font_clean.png,https://www.amazon.com,Up to 50% off fashion on Haul,Banner/Alert,Banner promoting a fashion sale on Haul,Click element: Banner promoting a fashion sale on Haul,80,458,390,522
+61,www.amazon.com_003_font_clean.png,https://www.amazon.com,Styles under $5,Card,Card displaying styles under $5,Click element: Card displaying styles under $5,80,530,234,650
+61,www.amazon.com_003_font_clean.png,https://www.amazon.com,Women's fashion,Card,Card displaying women's fashion items,Click element: Card displaying women's fashion items,246,530,394,646
+61,www.amazon.com_003_font_clean.png,https://www.amazon.com,Shop A+ tech for students,Banner/Alert,Banner promoting tech deals for students,Click element: Banner promoting tech deals for students,438,454,784,864
+61,www.amazon.com_003_font_clean.png,https://www.amazon.com,Under $50,Card,Card displaying items under $50,Click element: Card displaying items under $50,450,530,598,646
+61,www.amazon.com_003_font_clean.png,https://www.amazon.com,Under $100,Card,Card displaying items under $100,Click element: Card displaying items under $100,614,530,764,646
+61,www.amazon.com_003_font_clean.png,https://www.amazon.com,Small space solutions,Banner/Alert,Banner promoting furniture for small spaces,Click element: Banner promoting furniture for small spaces,824,502,1132,808
+61,www.amazon.com_003_font_clean.png,https://www.amazon.com,Shop small space furniture & décor,Button,Button to shop small space furniture,Click element: Button to shop small space furniture,824,824,1088,844
+61,www.amazon.com_003_font_clean.png,https://www.amazon.com,School tech,Banner/Alert,Banner promoting school tech deals,Click element: Banner promoting school tech deals,1166,442,1526,864
+61,www.amazon.com_003_font_clean.png,https://www.amazon.com,Computers & Tablets,Card,Card displaying computers and tablets,Click element: Card displaying computers and tablets,1194,502,1334,634
+61,www.amazon.com_003_font_clean.png,https://www.amazon.com,Audio,Card,Card displaying audio products,Click element: Card displaying audio products,1350,502,1502,638
+61,www.amazon.com_003_font_clean.png,https://www.amazon.com,Men's fashion,Card,Card displaying men's fashion items,Click element: Card displaying men's fashion items,80,676,234,776
+61,www.amazon.com_003_font_clean.png,https://www.amazon.com,Best sellers,Card,Card displaying best selling items,Click element: Card displaying best selling items,246,670,394,776
+61,www.amazon.com_003_font_clean.png,https://www.amazon.com,Shop early Prime Day deals,Button,Button to shop early Prime Day deals,Click element: Button to shop early Prime Day deals,82,824,286,844
+61,www.amazon.com_003_font_clean.png,https://www.amazon.com,Under $250,Card,Card displaying items under $250,Click element: Card displaying items under $250,450,670,602,776
+61,www.amazon.com_003_font_clean.png,https://www.amazon.com,Under $300,Card,Card displaying items under $300,Click element: Card displaying items under $300,614,676,764,776
+61,www.amazon.com_003_font_clean.png,https://www.amazon.com,Accessories,Card,Card displaying accessories,Click element: Card displaying accessories,1190,666,1334,776
+61,www.amazon.com_003_font_clean.png,https://www.amazon.com,4+ star picks,Card,Card displaying 4+ star rated products,Click element: Card displaying 4+ star rated products,1350,662,1502,776
+61,www.amazon.com_003_font_clean.png,https://www.amazon.com,Shop Back to School,Button,Button to shop Back to School deals,Click element: Button to shop Back to School deals,1194,828,1338,844
+61,www.amazon.com_003_font_clean.png,https://www.amazon.com,Stain & Soap Scum Resistant,Text Area,Text describing the product feature,Click element: Text describing the product feature,306,32,410,56
+73,www.amazon.com_004_clean.png,https://www.amazon.com,Blink Outdoor 4 (newest model)...,Card,First product card in 'Early Deals on Amazon devices',Click element: First product card in 'Early Deals on Amazon devices',80,40,310,358
+73,www.amazon.com_004_clean.png,https://www.amazon.com,Ring Doorbell with Ring Indoor Cam (2nd Gen),Card,Second product card in 'Early Deals on Amazon devices',Click element: Second product card in 'Early Deals on Amazon devices',326,40,570,358
+73,www.amazon.com_004_clean.png,https://www.amazon.com,Ring Alarm 14-Piece Kit – Wireless...,Card,Fifth product card in 'Early Deals on Amazon devices',Click element: Fifth product card in 'Early Deals on Amazon devices',832,40,1068,354
+73,www.amazon.com_004_clean.png,https://www.amazon.com,TP-Link AX1200 WiFi Extender...,Card,First product card in 'Hot prices on top products',Click element: First product card in 'Hot prices on top products',76,438,318,744
+73,www.amazon.com_004_clean.png,https://www.amazon.com,TP-Link USB Bluetooth Adapter for...,Card,Second product card in 'Hot prices on top products',Click element: Second product card in 'Hot prices on top products',326,446,570,744
+73,www.amazon.com_004_clean.png,https://www.amazon.com,Philips Sonicare 4100 Rechargeable...,Card,Third product card in 'Hot prices on top products',Click element: Third product card in 'Hot prices on top products',578,438,824,752
+73,www.amazon.com_004_clean.png,https://www.amazon.com,Shop college essentials,Button,First category button at the bottom,Click element: First category button at the bottom,82,802,318,828
+73,www.amazon.com_004_clean.png,https://www.amazon.com,Dive into swim,Button,Second category button at the bottom,Click element: Second category button at the bottom,452,802,598,828
+73,www.amazon.com_004_clean.png,https://www.amazon.com,Pet wellness must-haves,Button,Third category button at the bottom,Click element: Third category button at the bottom,824,802,1068,828
+73,www.amazon.com_004_clean.png,https://www.amazon.com,Shop college-ready styles,Button,Fourth category button at the bottom,Click element: Fourth category button at the bottom,438,792,772,832
+73,www.amazon.com_004_clean.png,https://www.amazon.com,62% off,Badge/Chip,Discount badge on Blink Outdoor 4 card,Click element: Discount badge on Blink Outdoor 4 card,82,270,136,290
+73,www.amazon.com_004_clean.png,https://www.amazon.com,50% off,Badge/Chip,Discount badge on Ring Doorbell card,Click element: Discount badge on Ring Doorbell card,334,270,386,290
+73,www.amazon.com_004_clean.png,https://www.amazon.com,40% off,Badge/Chip,Discount badge on Ring Indoor Cam card,Click element: Discount badge on Ring Indoor Cam card,586,270,638,290
+73,www.amazon.com_004_clean.png,https://www.amazon.com,54% off,Badge/Chip,Discount badge on Blink Outdoor 4 Floodlight Camera card,Click element: Discount badge on Blink Outdoor 4 Floodlight Camera card,840,270,880,290
+73,www.amazon.com_004_clean.png,https://www.amazon.com,40% off,Badge/Chip,Discount badge on Ring Alarm 14-Piece Kit card,Click element: Discount badge on Ring Alarm 14-Piece Kit card,1092,270,1136,290
+73,www.amazon.com_004_clean.png,https://www.amazon.com,27% off,Badge/Chip,"Discount badge on Amazon Fire TV 32"" 2-Series card","Click element: Discount badge on Amazon Fire TV 32"" 2-Series card",1342,270,1394,290
+73,www.amazon.com_004_clean.png,https://www.amazon.com,55% off,Badge/Chip,Discount badge on TP-Link AX1200 WiFi Extender card,Click element: Discount badge on TP-Link AX1200 WiFi Extender card,84,670,124,684
+73,www.amazon.com_004_clean.png,https://www.amazon.com,43% off,Badge/Chip,Discount badge on TP-Link USB Bluetooth Adapter card,Click element: Discount badge on TP-Link USB Bluetooth Adapter card,334,666,378,688
+73,www.amazon.com_004_clean.png,https://www.amazon.com,30% off,Badge/Chip,Discount badge on Philips Sonicare 4100 Rechargeable card,Click element: Discount badge on Philips Sonicare 4100 Rechargeable card,586,666,634,688
+73,www.amazon.com_004_clean.png,https://www.amazon.com,50% off,Badge/Chip,Discount badge on Craftsman VERSASTACK Mechanics card,Click element: Discount badge on Craftsman VERSASTACK Mechanics card,840,666,888,688
+73,www.amazon.com_004_clean.png,https://www.amazon.com,33% off,Badge/Chip,Discount badge on HyperX SoloCast - USB Condenser card,Click element: Discount badge on HyperX SoloCast - USB Condenser card,1088,666,1140,688
+73,www.amazon.com_004_clean.png,https://www.amazon.com,35% off,Badge/Chip,Discount badge on TP-Link AXE5400 Tri-Band Wi card,Click element: Discount badge on TP-Link AXE5400 Tri-Band Wi card,1342,670,1390,688
+73,www.amazon.com_004_clean.png,https://www.amazon.com,See more,Link,See more link under 'Early Deals on Amazon devices',Click element: See more link under 'Early Deals on Amazon devices',390,8,454,24
+73,www.amazon.com_004_clean.png,https://www.amazon.com,See more,Link,See more link under 'Hot prices on top products',Click element: See more link under 'Hot prices on top products',346,402,410,422
+73,www.amazon.com_004_clean.png,https://www.amazon.com,amazon prime,Image,Amazon Prime logo on the right side,Click element: Amazon Prime logo on the right side,1378,116,1506,204
+79,www.amazon.com_004_font_clean.png,https://www.amazon.com,Early Deals on Amazon devices,Banner/Alert,Top banner text,Click element: Top banner text,76,4,342,24
+79,www.amazon.com_004_font_clean.png,https://www.amazon.com,Blink Outdoor 4 (newest model),Card,First product card in the 'Early Deals' section,Click element: First product card in the 'Early Deals' section,76,36,318,354
+79,www.amazon.com_004_font_clean.png,https://www.amazon.com,67% off,Badge/Chip,Discount badge on the first product card,Click element: Discount badge on the first product card,82,270,132,290
+79,www.amazon.com_004_font_clean.png,https://www.amazon.com,50% off,Badge/Chip,Discount badge on the second product card,Click element: Discount badge on the second product card,334,270,382,290
+79,www.amazon.com_004_font_clean.png,https://www.amazon.com,Hot prices on top products,Banner/Alert,Section header for 'Hot prices on top products',Click element: Section header for 'Hot prices on top products',76,400,306,426
+79,www.amazon.com_004_font_clean.png,https://www.amazon.com,TP-Link AX2100 WiFi Extender,Card,First product card in the 'Hot prices' section,Click element: First product card in the 'Hot prices' section,72,434,318,752
+79,www.amazon.com_004_font_clean.png,https://www.amazon.com,53% off,Badge/Chip,Discount badge on the first product card in 'Hot prices',Click element: Discount badge on the first product card in 'Hot prices',82,670,128,688
+79,www.amazon.com_004_font_clean.png,https://www.amazon.com,TP-Link USB Bluetooth Adapter for PC...,Card,Second product card in the 'Hot prices' section,Click element: Second product card in the 'Hot prices' section,326,438,570,752
+79,www.amazon.com_004_font_clean.png,https://www.amazon.com,47% off,Badge/Chip,Discount badge on the second product card in 'Hot prices',Click element: Discount badge on the second product card in 'Hot prices',334,666,382,688
+79,www.amazon.com_004_font_clean.png,https://www.amazon.com,Shop college essentials,Button,Button to shop college essentials,Click element: Button to shop college essentials,82,804,282,824
+79,www.amazon.com_004_font_clean.png,https://www.amazon.com,Dive into swim,Button,Button to dive into swim,Click element: Button to dive into swim,454,800,586,828
+79,www.amazon.com_004_font_clean.png,https://www.amazon.com,Pet wellness must-haves,Button,Button to shop pet wellness,Click element: Button to shop pet wellness,824,840,1132,900
+79,www.amazon.com_004_font_clean.png,https://www.amazon.com,Shop college-ready styles,Button,Button to shop college-ready styles,Click element: Button to shop college-ready styles,1194,800,1418,828
+79,www.amazon.com_004_font_clean.png,https://www.amazon.com,See more,Link,See more link under 'Early Deals on Amazon devices',Click element: See more link under 'Early Deals on Amazon devices',354,8,414,24
+79,www.amazon.com_004_font_clean.png,https://www.amazon.com,See more,Link,See more link under 'Hot prices on top products',Click element: See more link under 'Hot prices on top products',318,402,374,422
+79,www.amazon.com_004_font_clean.png,https://www.amazon.com,"Amazon Fire TV 32"" 2 Series",Card,Last product card in the 'Early Deals' section,Click element: Last product card in the 'Early Deals' section,1338,36,1538,354
+79,www.amazon.com_004_font_clean.png,https://www.amazon.com,27% off,Badge/Chip,Discount badge on the last product card in 'Early Deals',Click element: Discount badge on the last product card in 'Early Deals',1342,270,1394,290
+79,www.amazon.com_004_font_clean.png,https://www.amazon.com,Philips Sonicare 4100 Rechargeable Elect...,Card,Fourth product card in the 'Hot prices' section,Click element: Fourth product card in the 'Hot prices' section,832,442,1072,748
+79,www.amazon.com_004_font_clean.png,https://www.amazon.com,30% off,Badge/Chip,Discount badge on the fourth product card in 'Hot prices',Click element: Discount badge on the fourth product card in 'Hot prices',836,666,888,688
+79,www.amazon.com_004_font_clean.png,https://www.amazon.com,HyperX SoloCast - USB Condenser...,Card,Fifth product card in the 'Hot prices' section,Click element: Fifth product card in the 'Hot prices' section,1084,438,1322,752
+79,www.amazon.com_004_font_clean.png,https://www.amazon.com,33% off,Badge/Chip,Discount badge on the fifth product card in 'Hot prices',Click element: Discount badge on the fifth product card in 'Hot prices',836,666,888,688
+79,www.amazon.com_004_font_clean.png,https://www.amazon.com,TP-Link AXE5400 Tri-Band WiFi...,Card,Sixth product card in the 'Hot prices' section,Click element: Sixth product card in the 'Hot prices' section,1084,442,1314,748
+79,www.amazon.com_004_font_clean.png,https://www.amazon.com,35% off,Badge/Chip,Discount badge on the sixth product card in 'Hot prices',Click element: Discount badge on the sixth product card in 'Hot prices',1088,666,1140,692
+91,www.amazon.com_005_clean.png,https://www.amazon.com,Study supplies,Link,First category link at the top,Click element: First category link at the top,80,52,160,68
+91,www.amazon.com_005_clean.png,https://www.amazon.com,Electronics,Link,Second category link at the top,Click element: Second category link at the top,246,54,304,68
+91,www.amazon.com_005_clean.png,https://www.amazon.com,Dog flea & tick,Link,Third category link at the top,Click element: Third category link at the top,820,54,900,70
+91,www.amazon.com_005_clean.png,https://www.amazon.com,Cat flea & tick,Link,Fourth category link at the top,Click element: Fourth category link at the top,988,56,1060,68
+91,www.amazon.com_005_clean.png,https://www.amazon.com,Backpacks & bags,Link,Fifth category link at the top,Click element: Fifth category link at the top,988,56,1060,68
+91,www.amazon.com_005_clean.png,https://www.amazon.com,Clothing,Link,Sixth category link at the top,Click element: Sixth category link at the top,984,56,1060,68
+91,www.amazon.com_005_clean.png,https://www.amazon.com,Dorm essentials,Link,Seventh category link at the top,Click element: Seventh category link at the top,820,214,892,230
+91,www.amazon.com_005_clean.png,https://www.amazon.com,Fashion,Link,Eighth category link at the top,Click element: Eighth category link at the top,80,212,168,230
+91,www.amazon.com_005_clean.png,https://www.amazon.com,Supplements,Link,Ninth category link at the top,Click element: Ninth category link at the top,820,214,892,230
+91,www.amazon.com_005_clean.png,https://www.amazon.com,Pet wellness deals,Link,Tenth category link at the top,Click element: Tenth category link at the top,984,216,1084,230
+91,www.amazon.com_005_clean.png,https://www.amazon.com,Shoes,Link,Eleventh category link at the top,Click element: Eleventh category link at the top,984,214,1084,230
+91,www.amazon.com_005_clean.png,https://www.amazon.com,Accessories,Link,Twelfth category link at the top,Click element: Twelfth category link at the top,1194,212,1226,230
+91,www.amazon.com_005_clean.png,https://www.amazon.com,Shop all,Button,First shop button,Click element: First shop button,82,262,128,282
+91,www.amazon.com_005_clean.png,https://www.amazon.com,Shop now on Shopbob,Button,Second shop button,Click element: Second shop button,452,262,760,280
+91,www.amazon.com_005_clean.png,https://www.amazon.com,Shop all pet wellness,Button,Third shop button,Click element: Third shop button,822,264,944,282
+91,www.amazon.com_005_clean.png,https://www.amazon.com,Shop now,Button,Fourth shop button,Click element: Fourth shop button,1194,266,1250,280
+91,www.amazon.com_005_clean.png,https://www.amazon.com,MIGHTY PATCH,Image,First product image in 'Best Sellers',Click element: First product image in 'Best Sellers',96,378,220,578
+91,www.amazon.com_005_clean.png,https://www.amazon.com,Neutrogena MAKEUP REMOVER,Image,Second product image in 'Best Sellers',Click element: Second product image in 'Best Sellers',242,378,434,574
+91,www.amazon.com_005_clean.png,https://www.amazon.com,Amazon Basics Cotton Swabs,Image,Third product image in 'Best Sellers',Click element: Third product image in 'Best Sellers',446,378,634,578
+91,www.amazon.com_005_clean.png,https://www.amazon.com,"Save now, with lower MSRP",Text Area,Nissan ad text,Click element: Nissan ad text,1242,530,1390,570
+91,www.amazon.com_005_clean.png,https://www.amazon.com,Sponsored,Badge/Chip,Sponsored badge on Nissan ad,Click element: Sponsored badge on Nissan ad,1450,578,1522,594
+91,www.amazon.com_005_clean.png,https://www.amazon.com,Careers,Link,First link in the footer,Click element: First link in the footer,302,772,354,792
+91,www.amazon.com_005_clean.png,https://www.amazon.com,Amazon Newsletter,Link,Second link in the footer,Click element: Second link in the footer,542,772,638,788
+91,www.amazon.com_005_clean.png,https://www.amazon.com,Amazon Store Card,Link,Link in Amazon Payment Products section,Click element: Link in Amazon Payment Products section,824,828,964,844
+91,www.amazon.com_005_clean.png,https://www.amazon.com,Your Account,Link,First link in 'Let Us Help You' section,Click element: First link in 'Let Us Help You' section,1152,772,1234,792
+97,www.amazon.com_005_font_clean.png,https://www.amazon.com,Study supplies,Link,Link to study supplies category,Click element: Link to study supplies category,82,56,398,68
+97,www.amazon.com_005_font_clean.png,https://www.amazon.com,Electronics,Link,Link to electronics category,Click element: Link to electronics category,246,56,300,68
+97,www.amazon.com_005_font_clean.png,https://www.amazon.com,Dog flea & tick,Link,Link to dog flea & tick products,Click element: Link to dog flea & tick products,824,56,896,68
+97,www.amazon.com_005_font_clean.png,https://www.amazon.com,Cat flea & tick,Link,Link to cat flea & tick products,Click element: Link to cat flea & tick products,984,56,1056,68
+97,www.amazon.com_005_font_clean.png,https://www.amazon.com,Backpacks & bags,Link,Link to backpacks & bags category,Click element: Link to backpacks & bags category,1194,56,1282,68
+97,www.amazon.com_005_font_clean.png,https://www.amazon.com,Clothing,Link,Link to clothing category,Click element: Link to clothing category,1354,56,1398,68
+97,www.amazon.com_005_font_clean.png,https://www.amazon.com,Dorm essentials,Link,Link to dorm essentials category,Click element: Link to dorm essentials category,82,216,158,230
+97,www.amazon.com_005_font_clean.png,https://www.amazon.com,Fashion,Link,Link to fashion category,Click element: Link to fashion category,246,216,284,230
+97,www.amazon.com_005_font_clean.png,https://www.amazon.com,Shop all,Link,Link to shop all,Click element: Link to shop all,82,266,124,280
+97,www.amazon.com_005_font_clean.png,https://www.amazon.com,Shop now on Shopbop,Button,Button to shop now on Shopbop,Click element: Button to shop now on Shopbop,454,266,570,280
+97,www.amazon.com_005_font_clean.png,https://www.amazon.com,Supplements,Link,Link to supplements category,Click element: Link to supplements category,822,214,884,230
+97,www.amazon.com_005_font_clean.png,https://www.amazon.com,Pet wellness deals,Link,Link to pet wellness deals,Click element: Link to pet wellness deals,984,216,1072,230
+97,www.amazon.com_005_font_clean.png,https://www.amazon.com,Shoes,Link,Link to shoes category,Click element: Link to shoes category,1194,212,1222,234
+97,www.amazon.com_005_font_clean.png,https://www.amazon.com,Accessories,Link,Link to accessories category,Click element: Link to accessories category,1354,216,1414,230
+97,www.amazon.com_005_font_clean.png,https://www.amazon.com,MIGHTY PATCH,Image,Image of Mighty Patch product,Click element: Image of Mighty Patch product,84,378,230,578
+97,www.amazon.com_005_font_clean.png,https://www.amazon.com,MAKEUP REMOVER,Image,Image of Neutrogena Makeup Remover,Click element: Image of Neutrogena Makeup Remover,446,374,634,578
+97,www.amazon.com_005_font_clean.png,https://www.amazon.com,cotton swabs,Image,Image of Amazon Basics cotton swabs,Click element: Image of Amazon Basics cotton swabs,666,378,776,574
+97,www.amazon.com_005_font_clean.png,https://www.amazon.com,lust,Image,Image of Lust product,Click element: Image of Lust product,450,0,762,242
+97,www.amazon.com_005_font_clean.png,https://www.amazon.com,PanOxyl,Image,Image of PanOxyl product,Click element: Image of PanOxyl product,1112,378,1186,574
+97,www.amazon.com_005_font_clean.png,https://www.amazon.com,"Save now, with lower MSRPs",Banner/Alert,Banner promoting Nissan savings,Click element: Banner promoting Nissan savings,1222,326,1522,578
+97,www.amazon.com_005_font_clean.png,https://www.amazon.com,Careers,Link,Careers link in the footer,Click element: Careers link in the footer,302,772,346,790
+97,www.amazon.com_005_font_clean.png,https://www.amazon.com,Amazon Newsletter,Link,Amazon Newsletter link in the footer,Click element: Amazon Newsletter link in the footer,302,800,362,828
+97,www.amazon.com_005_font_clean.png,https://www.amazon.com,Amazon Store Card,Link,Amazon Store Card link in the footer,Click element: Amazon Store Card link in the footer,822,800,932,816
+97,www.amazon.com_005_font_clean.png,https://www.amazon.com,Your Account,Link,Your Account link in the footer,Click element: Your Account link in the footer,1128,772,1206,790
+97,www.amazon.com_005_font_clean.png,https://www.amazon.com,Returns & Replacements,Link,Returns & Replacements link in the footer,Click element: Returns & Replacements link in the footer,1128,880,1270,896
+109,www.amazon.com_006_clean.png,https://www.amazon.com,Sustainability,Link,Sustainability link in the top navigation bar,Click element: Sustainability link in the top navigation bar,302,0,526,16
+109,www.amazon.com_006_clean.png,https://www.amazon.com,Become an Affiliate,Link,Become an Affiliate link in the top navigation bar,Click element: Become an Affiliate link in the top navigation bar,542,0,688,20
+109,www.amazon.com_006_clean.png,https://www.amazon.com,Amazon Music,Card,Amazon Music card in the lower section,Click element: Amazon Music card in the lower section,302,414,382,454
+109,www.amazon.com_006_clean.png,https://www.amazon.com,Amazon Ads,Card,Amazon Ads card in the lower section,Click element: Amazon Ads card in the lower section,446,414,590,470
+109,www.amazon.com_006_clean.png,https://www.amazon.com,6pm,Card,6pm card in the lower section,Click element: 6pm card in the lower section,594,414,716,454
+109,www.amazon.com_006_clean.png,https://www.amazon.com,Abebooks,Card,Abebooks card in the lower section,Click element: Abebooks card in the lower section,740,414,860,454
+109,www.amazon.com_006_clean.png,https://www.amazon.com,ACX,Card,ACX card in the lower section,Click element: ACX card in the lower section,886,414,1008,466
+109,www.amazon.com_006_clean.png,https://www.amazon.com,Sell on Amazon,Card,Sell on Amazon card in the lower section,Click element: Sell on Amazon card in the lower section,1032,414,1132,454
+109,www.amazon.com_006_clean.png,https://www.amazon.com,Veeqo,Card,Veeqo card in the lower section,Click element: Veeqo card in the lower section,1178,414,1286,466
+109,www.amazon.com_006_clean.png,https://www.amazon.com,Amazon Business,Card,Amazon Business card in the lower section,Click element: Amazon Business card in the lower section,302,482,422,526
+109,www.amazon.com_006_clean.png,https://www.amazon.com,Amazon Fresh,Card,Amazon Fresh card in the lower section,Click element: Amazon Fresh card in the lower section,446,482,550,526
+109,www.amazon.com_006_clean.png,https://www.amazon.com,Home Services,Card,Home Services card in the lower section,Click element: Home Services card in the lower section,740,482,872,542
+109,www.amazon.com_006_clean.png,https://www.amazon.com,Audible,Card,Audible card in the lower section,Click element: Audible card in the lower section,1032,482,1154,550
+109,www.amazon.com_006_clean.png,https://www.amazon.com,Box Office Mojo,Card,Box Office Mojo card in the lower section,Click element: Box Office Mojo card in the lower section,1178,482,1266,526
+109,www.amazon.com_006_clean.png,https://www.amazon.com,Goodreads,Card,Goodreads card in the lower section,Click element: Goodreads card in the lower section,302,566,422,618
+109,www.amazon.com_006_clean.png,https://www.amazon.com,IMDb,Card,IMDb card in the lower section,Click element: IMDb card in the lower section,594,566,720,634
+109,www.amazon.com_006_clean.png,https://www.amazon.com,Kindle Direct Publishing,Card,Kindle Direct Publishing card in the lower section,Click element: Kindle Direct Publishing card in the lower section,740,566,872,634
+109,www.amazon.com_006_clean.png,https://www.amazon.com,Amazon Photos,Card,Amazon Photos card in the lower section,Click element: Amazon Photos card in the lower section,884,566,996,620
+109,www.amazon.com_006_clean.png,https://www.amazon.com,Shopbop,Card,Shopbop card in the lower section,Click element: Shopbop card in the lower section,1178,566,1282,610
+109,www.amazon.com_006_clean.png,https://www.amazon.com,Amazon Resale,Card,Amazon Resale card in the lower section,Click element: Amazon Resale card in the lower section,302,650,422,708
+109,www.amazon.com_006_clean.png,https://www.amazon.com,Whole Foods,Card,Whole Foods card in the lower section,Click element: Whole Foods card in the lower section,446,650,590,720
+109,www.amazon.com_006_clean.png,https://www.amazon.com,Ring,Card,Ring card in the lower section,Click element: Ring card in the lower section,884,650,1000,692
+109,www.amazon.com_006_clean.png,https://www.amazon.com,Blink,Card,Blink card in the lower section,Click element: Blink card in the lower section,1178,650,1278,692
+109,www.amazon.com_006_clean.png,https://www.amazon.com,English,Dropdown/Select,Language dropdown in the header,Click element: Language dropdown in the header,732,306,860,338
+109,www.amazon.com_006_clean.png,https://www.amazon.com,United States,Dropdown/Select,Country dropdown in the header,Click element: Country dropdown in the header,876,306,1008,338
+115,www.amazon.com_006_font_clean.png,https://www.amazon.com,Accessibility,Link,Accessibility link in the top navigation bar,Click element: Accessibility link in the top navigation bar,302,4,374,20
+115,www.amazon.com_006_font_clean.png,https://www.amazon.com,Amazon Music,Link,Amazon Music link in the bottom left section,Click element: Amazon Music link in the bottom left section,302,434,374,446
+115,www.amazon.com_006_font_clean.png,https://www.amazon.com,Amazon Ads,Link,Amazon Ads link in the bottom left section,Click element: Amazon Ads link in the bottom left section,446,434,510,446
+115,www.amazon.com_006_font_clean.png,https://www.amazon.com,6pm,Link,6pm link in the bottom center section,Click element: 6pm link in the bottom center section,594,434,614,446
+115,www.amazon.com_006_font_clean.png,https://www.amazon.com,Abebooks,Link,Abebooks link in the bottom center section,Click element: Abebooks link in the bottom center section,740,434,792,446
+115,www.amazon.com_006_font_clean.png,https://www.amazon.com,Sell on Amazon,Link,Sell on Amazon link in the bottom right section,Click element: Sell on Amazon link in the bottom right section,1032,434,1108,446
+115,www.amazon.com_006_font_clean.png,https://www.amazon.com,Veeqo,Link,Veeqo link in the bottom right section,Click element: Veeqo link in the bottom right section,1178,432,1210,446
+115,www.amazon.com_006_font_clean.png,https://www.amazon.com,Amazon Fresh,Link,Amazon Fresh link in the bottom left section,Click element: Amazon Fresh link in the bottom left section,446,502,518,514
+115,www.amazon.com_006_font_clean.png,https://www.amazon.com,AmazonGlobal,Link,AmazonGlobal link in the bottom center section,Click element: AmazonGlobal link in the bottom center section,594,502,666,518
+115,www.amazon.com_006_font_clean.png,https://www.amazon.com,Audible,Link,Audible link in the bottom right section,Click element: Audible link in the bottom right section,1032,502,1068,518
+115,www.amazon.com_006_font_clean.png,https://www.amazon.com,Kindle Direct Publishing,Link,Kindle Direct Publishing link in the bottom center section,Click element: Kindle Direct Publishing link in the bottom center section,740,574,804,614
+115,www.amazon.com_006_font_clean.png,https://www.amazon.com,Prime Video Direct,Link,Prime Video Direct link in the bottom right section,Click element: Prime Video Direct link in the bottom right section,1032,574,1124,586
+115,www.amazon.com_006_font_clean.png,https://www.amazon.com,Whole Foods Market,Link,Whole Foods Market link in the bottom left section,Click element: Whole Foods Market link in the bottom left section,448,656,550,670
+115,www.amazon.com_006_font_clean.png,https://www.amazon.com,Woot!,Link,Woot! link in the bottom center section,Click element: Woot! link in the bottom center section,594,654,622,670
+115,www.amazon.com_006_font_clean.png,https://www.amazon.com,Zappos,Link,Zappos link in the bottom center section,Click element: Zappos link in the bottom center section,740,658,776,670
+115,www.amazon.com_006_font_clean.png,https://www.amazon.com,English,Dropdown/Select,Language dropdown in the top center,Click element: Language dropdown in the top center,756,330,840,350
+115,www.amazon.com_006_font_clean.png,https://www.amazon.com,United States,Dropdown/Select,Country dropdown in the top center,Click element: Country dropdown in the top center,872,322,1002,358
+115,www.amazon.com_006_font_clean.png,https://www.amazon.com,Gift Cards,Link,Gift Cards link in the top navigation bar,Click element: Gift Cards link in the top navigation bar,822,96,880,112
+115,www.amazon.com_006_font_clean.png,https://www.amazon.com,Your Privacy Choices,Link,Your Privacy Choices link in the footer,Click element: Your Privacy Choices link in the footer,928,836,1052,848
+115,www.amazon.com_006_font_clean.png,https://www.amazon.com,Amazon Renewed,Link,Amazon Renewed link in the bottom center section,Click element: Amazon Renewed link in the bottom center section,888,724,974,740
+115,www.amazon.com_006_font_clean.png,https://www.amazon.com,Help,Link,Help link in the top navigation bar,Click element: Help link in the top navigation bar,1128,156,1158,172
+115,www.amazon.com_006_font_clean.png,https://www.amazon.com,Return & Replacements,Link,Return & Replacements link in the top navigation bar,Click element: Return & Replacements link in the top navigation bar,1126,16,1270,32
+115,www.amazon.com_006_font_clean.png,https://www.amazon.com,Manage Your Content and Devices,Link,Manage Your Content and Devices link in the top navigation bar,Click element: Manage Your Content and Devices link in the top navigation bar,1126,40,1276,76
+115,www.amazon.com_006_font_clean.png,https://www.amazon.com,Amazon Converter,Link,Amazon Currency Converter link in the top navigation bar,Click element: Amazon Currency Converter link in the top navigation bar,822,124,984,140
+115,www.amazon.com_006_font_clean.png,https://www.amazon.com,Conditions of Use,Link,Conditions of Use link in the footer,Click element: Conditions of Use link in the footer,520,836,606,848
