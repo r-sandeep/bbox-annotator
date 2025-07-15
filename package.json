@@ -28,7 +28,8 @@
     "lint:eslint:fix": "./node_modules/.bin/eslint --ignore-path .gitignore --fix",
     "lint:js": "npm run lint:eslint -- . ",
     "lint:staged": "lint-staged",
-    "prettify": "prettier --write"
+    "prettify": "prettier --write",
+    "examples": "vite --config examples/vite.config.ts"
   },
   "lint-staged": {
     "*.{js,ts,tsx}": [
