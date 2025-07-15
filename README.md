@@ -49,6 +49,10 @@ const App: React.FC = () => {
 export default App;
 
 ```
+## Local example
+-------
+Run `npm run dev` to launch a Vite dev server with a demo page to try editing bounding boxes.
+
 ## Why should I use this?
 -------
 This component can be quiet handy if you are building an image labeling plateform. It abstracts the complexity of creating the UI for drawing boxes around an image and setting it's label while keeping the boxes  in reference to the original image size.

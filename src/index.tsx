@@ -1,4 +1,3 @@
-import BBoxAnnotator, { EntryType } from './BBoxAnnotator';
-
-export { EntryType };
+import BBoxAnnotator from './BBoxAnnotator';
+export type { EntryType } from './BBoxAnnotator';
 export default BBoxAnnotator;
