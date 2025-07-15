@@ -64,4 +64,4 @@ The `BBoxAnnotator` Component takes the following props in order to control it's
  * `borderWidth?: number`: Width of bounding box border in pixels.
  * `initialEntries?: { left: number; top: number; width: number; height: number; label: string }[]`: Load existing annotations so they can be edited.
 
-Boxes can be repositioned after creation by dragging them with the mouse.
+Boxes can be repositioned after creation by dragging them with the mouse.\n## Local examples\nRun `npm run examples` and open the served page to try interactive examples located in the `examples` folder.
