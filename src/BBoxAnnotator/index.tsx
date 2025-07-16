@@ -42,7 +42,12 @@ const BBoxAnnotator = React.forwardRef<any, Props>(
         >([]);
         const [multiplier, setMultiplier] = useState(1);
         const [imageLoaded, setImageLoaded] = useState(false);
+        const skipOnChange = useRef(true);
         useEffect(() => {
+            if (skipOnChange.current) {
+                skipOnChange.current = false;
+                return;
+            }
             onChange(
                 entries.map((entry) => ({
                     width: Math.round(entry.width * multiplier),
@@ -55,7 +60,9 @@ const BBoxAnnotator = React.forwardRef<any, Props>(
         }, [entries, multiplier]);
 
         useEffect(() => {
-            if (imageLoaded && initialEntries && initialEntries.length) {
+            if (!imageLoaded) return;
+            skipOnChange.current = true;
+            if (initialEntries && initialEntries.length) {
                 setEntries(
                     initialEntries.map((entry) => ({
                         id: uuid(),
@@ -67,6 +74,8 @@ const BBoxAnnotator = React.forwardRef<any, Props>(
                         height: Math.round(entry.height / multiplier),
                     })),
                 );
+            } else {
+                setEntries([]);
             }
         }, [initialEntries, multiplier, imageLoaded]);
         const [status, setStatus] = useState<'free' | 'input' | 'hold' | 'drag' | 'resize'>('free');
