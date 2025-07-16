@@ -107,7 +107,7 @@ const ExampleReview: React.FC = () => {
     const csvText = csvFiles[path];
     const { data, labels } = parseCsv(csvText);
     const dir = path.substring(0, path.lastIndexOf('/'));
-    const files = Object.keys(data);
+    const files = Object.keys(data).sort();
     const imageUrls: Record<string, string> = {};
     files.forEach((f) => {
       const imgPath = `${dir}/images/${f}`;
