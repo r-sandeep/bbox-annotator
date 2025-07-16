@@ -11,6 +11,8 @@ export default defineConfig({
     },
   },
   server: {
-    open: true,
+    // Only open the browser if explicitly requested to avoid failures when
+    // utilities like `xdg-open` are unavailable.
+    open: process.env.OPEN_BROWSER === 'true',
   },
 });
