@@ -173,8 +173,13 @@ const BBoxAnnotator = React.forwardRef<any, Props>(
                     case 'drag':
                         if (draggingId && dragOffset && dragStart) {
                             const pos = crop(e.pageX, e.pageY);
-                            if (!dragMoved && (pos.x !== dragStart.x || pos.y !== dragStart.y)) {
-                                setDragMoved(true);
+                            if (!dragMoved) {
+                                const dx = pos.x - dragStart.x;
+                                const dy = pos.y - dragStart.y;
+                                const distanceSquared = dx * dx + dy * dy;
+                                if (distanceSquared > 9) {
+                                    setDragMoved(true);
+                                }
                             }
                             setEntries((prev) =>
                                 prev.map((entry) => {
