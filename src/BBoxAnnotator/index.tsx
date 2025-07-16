@@ -99,10 +99,13 @@ const BBoxAnnotator = React.forwardRef<any, Props>(
         const labelInputRef = useRef<HTMLDivElement>(null);
         const [draggingId, setDraggingId] = useState<string | null>(null);
         const [dragOffset, setDragOffset] = useState<{ x: number; y: number } | null>(null);
+        const [dragStart, setDragStart] = useState<{ x: number; y: number } | null>(null);
+        const [dragMoved, setDragMoved] = useState(false);
         const [resizingId, setResizingId] = useState<string | null>(null);
         const [resizingCorner, setResizingCorner] = useState<'nw' | 'ne' | 'sw' | 'se' | null>(null);
         const [resizeStart, setResizeStart] = useState<{ x: number; y: number } | null>(null);
         const [resizeBox, setResizeBox] = useState<EntryType | null>(null);
+        const [editingId, setEditingId] = useState<string | null>(null);
         useEffect(() => {
             const imageElement = new Image();
             imageElement.src = url;
@@ -168,8 +171,11 @@ const BBoxAnnotator = React.forwardRef<any, Props>(
                         updateRectangle(e.pageX, e.pageY);
                         break;
                     case 'drag':
-                        if (draggingId && dragOffset) {
+                        if (draggingId && dragOffset && dragStart) {
                             const pos = crop(e.pageX, e.pageY);
+                            if (!dragMoved && (pos.x !== dragStart.x || pos.y !== dragStart.y)) {
+                                setDragMoved(true);
+                            }
                             setEntries((prev) =>
                                 prev.map((entry) => {
                                     if (entry.id === draggingId) {
@@ -239,9 +245,16 @@ const BBoxAnnotator = React.forwardRef<any, Props>(
                         setStatus('input');
                         break;
                     case 'drag':
-                        setStatus('free');
+                        if (!dragMoved && draggingId) {
+                            setEditingId(draggingId);
+                            setStatus('input');
+                        } else {
+                            setStatus('free');
+                        }
                         setDraggingId(null);
                         setDragOffset(null);
+                        setDragStart(null);
+                        setDragMoved(false);
                         break;
                     case 'resize':
                         setStatus('free');
@@ -261,14 +274,23 @@ const BBoxAnnotator = React.forwardRef<any, Props>(
             }
         }, [status]);
 
-        const addEntry = (label: string) => {
-            setEntries([...entries, { ...rect, label, id: uuid(), showCloseButton: false }]);
+        const submitLabel = (label: string) => {
+            if (editingId) {
+                setEntries((prev) => prev.map((e) => (e.id === editingId ? { ...e, label } : e)));
+                setEditingId(null);
+            } else {
+                setEntries((prev) => [...prev, { ...rect, label, id: uuid(), showCloseButton: false }]);
+            }
             setStatus('free');
             setPointer(null);
             setOffset(null);
         };
 
         const mouseDownHandler = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
+            if (editingId) {
+                setEditingId(null);
+                setStatus('free');
+            }
             switch (status) {
                 case 'free':
                 case 'input':
@@ -339,7 +361,7 @@ const BBoxAnnotator = React.forwardRef<any, Props>(
                             top={rect.top + rect.height + borderWidth}
                             left={rect.left - borderWidth}
                             labels={labels}
-                            onSubmit={addEntry}
+                            onSubmit={submitLabel}
                             ref={labelInputRef}
                         />
                     ) : null}
@@ -364,6 +386,9 @@ const BBoxAnnotator = React.forwardRef<any, Props>(
                                     const pos = crop(e.pageX, e.pageY);
                                     setDraggingId(entry.id);
                                     setDragOffset({ x: pos.x - entry.left, y: pos.y - entry.top });
+                                    setDragStart(pos);
+                                    setDragMoved(false);
+                                    setEditingId(null);
                                     setPointer(null);
                                     setOffset(null);
                                     setStatus('drag');
@@ -506,6 +531,16 @@ const BBoxAnnotator = React.forwardRef<any, Props>(
                                 }}
                             />
                             <div style={{ overflow: 'hidden' }}>{entry.label}</div>
+                            {editingId === entry.id ? (
+                                <LabelBox
+                                    inputMethod={inputMethod}
+                                    top={entry.height + borderWidth}
+                                    left={-borderWidth}
+                                    labels={labels}
+                                    onSubmit={submitLabel}
+                                    ref={labelInputRef}
+                                />
+                            ) : null}
                         </div>
                     ))}
                 </div>
