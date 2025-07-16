@@ -41,6 +41,7 @@ const BBoxAnnotator = React.forwardRef<any, Props>(
             } & EntryType)[]
         >([]);
         const [multiplier, setMultiplier] = useState(1);
+        const [imageLoaded, setImageLoaded] = useState(false);
         useEffect(() => {
             onChange(
                 entries.map((entry) => ({
@@ -54,7 +55,7 @@ const BBoxAnnotator = React.forwardRef<any, Props>(
         }, [entries, multiplier]);
 
         useEffect(() => {
-            if (initialEntries && initialEntries.length) {
+            if (imageLoaded && initialEntries && initialEntries.length) {
                 setEntries(
                     initialEntries.map((entry) => ({
                         id: uuid(),
@@ -67,7 +68,7 @@ const BBoxAnnotator = React.forwardRef<any, Props>(
                     })),
                 );
             }
-        }, [initialEntries, multiplier]);
+        }, [initialEntries, multiplier, imageLoaded]);
         const [status, setStatus] = useState<'free' | 'input' | 'hold' | 'drag' | 'resize'>('free');
         const [bBoxAnnotatorStyle, setBboxAnnotatorStyle] = useState<{ width?: number; height?: number }>({});
         const [imageFrameStyle, setImageFrameStyle] = useState<{
@@ -102,6 +103,7 @@ const BBoxAnnotator = React.forwardRef<any, Props>(
                     width: width / m,
                     height: height / m,
                 });
+                setImageLoaded(true);
             };
             imageElement.onerror = function () {
                 throw 'Invalid image URL: ' + url;
@@ -298,7 +300,7 @@ const BBoxAnnotator = React.forwardRef<any, Props>(
                             ref={labelInputRef}
                         />
                     ) : null}
-                    {entries.map((entry, i) => (
+                    {entries.map((entry) => (
                         <div
                             style={{
                                 border: `${borderWidth}px solid rgb(255,0,0)`,
@@ -312,7 +314,7 @@ const BBoxAnnotator = React.forwardRef<any, Props>(
                                 fontSize: 'small',
                                 cursor: 'move',
                             }}
-                            key={i}
+                            key={entry.id}
                             onMouseDown={(e) => {
                                 if (e.button !== 2 && status === 'free') {
                                     e.stopPropagation();
