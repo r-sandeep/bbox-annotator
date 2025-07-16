@@ -6,6 +6,8 @@ const useStyles = createUseStyles({
         left: (props: Props) => `${props.left}px`,
         top: (props: Props) => `${props.top}px`,
         position: 'absolute',
+        // Higher z-index prevents other elements from covering the input box
+        zIndex: 10,
     },
     labelInput: {},
 });
