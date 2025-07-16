@@ -1,4 +1,10 @@
-import React, { useRef, useEffect, useState, useImperativeHandle } from 'react';
+import React, {
+    useRef,
+    useEffect,
+    useState,
+    useImperativeHandle,
+    useLayoutEffect,
+} from 'react';
 import { createUseStyles } from 'react-jss';
 import { v4 as uuid } from 'uuid';
 import BBoxSelector from '../BBoxSelector';
@@ -14,6 +20,8 @@ export type EntryType = {
 const useStyles = createUseStyles({
     bBoxAnnotator: {
         cursor: 'crosshair',
+        width: '100%',
+        position: 'relative',
     },
     imageFrame: {
         position: 'relative',
@@ -42,6 +50,7 @@ const BBoxAnnotator = React.forwardRef<any, Props>(
         >([]);
         const [multiplier, setMultiplier] = useState(1);
         const [imageLoaded, setImageLoaded] = useState(false);
+        const [imageSize, setImageSize] = useState<{ width: number; height: number } | null>(null);
         const skipOnChange = useRef(true);
         useEffect(() => {
             if (skipOnChange.current) {
@@ -95,29 +104,40 @@ const BBoxAnnotator = React.forwardRef<any, Props>(
         const [resizeStart, setResizeStart] = useState<{ x: number; y: number } | null>(null);
         const [resizeBox, setResizeBox] = useState<EntryType | null>(null);
         useEffect(() => {
-            const maxWidth = bBoxAnnotatorRef.current?.offsetWidth || 1;
             const imageElement = new Image();
             imageElement.src = url;
             imageElement.onload = function () {
-                const width = imageElement.width;
-                const height = imageElement.height;
-                const m = width / maxWidth;
-                setMultiplier(m);
-                setBboxAnnotatorStyle({
-                    width: width / m,
-                    height: height / m,
-                });
-                setImageFrameStyle({
-                    backgroundImageSrc: imageElement.src,
-                    width: width / m,
-                    height: height / m,
-                });
+                setImageSize({ width: imageElement.width, height: imageElement.height });
                 setImageLoaded(true);
             };
             imageElement.onerror = function () {
                 throw 'Invalid image URL: ' + url;
             };
-        }, [url, bBoxAnnotatorRef]);
+        }, [url]);
+
+        useLayoutEffect(() => {
+            if (!imageLoaded || !imageSize) return undefined;
+            const node = bBoxAnnotatorRef.current;
+            if (!node) return undefined;
+            const updateSize = () => {
+                const maxWidth = node.offsetWidth || 1;
+                const m = imageSize.width / maxWidth;
+                setMultiplier(m);
+                setBboxAnnotatorStyle({
+                    width: imageSize.width / m,
+                    height: imageSize.height / m,
+                });
+                setImageFrameStyle({
+                    backgroundImageSrc: url,
+                    width: imageSize.width / m,
+                    height: imageSize.height / m,
+                });
+            };
+            updateSize();
+            const ro = new ResizeObserver(updateSize);
+            ro.observe(node);
+            return () => ro.disconnect();
+        }, [imageLoaded, imageSize, url]);
 
         const crop = (pageX: number, pageY: number) => {
             return {
@@ -284,8 +304,14 @@ const BBoxAnnotator = React.forwardRef<any, Props>(
             <div
                 className={classes.bBoxAnnotator}
                 style={{
-                    width: `${bBoxAnnotatorStyle.width}px`,
-                    height: `${bBoxAnnotatorStyle.height}px`,
+                    width:
+                        bBoxAnnotatorStyle.width !== undefined
+                            ? `${bBoxAnnotatorStyle.width}px`
+                            : undefined,
+                    height:
+                        bBoxAnnotatorStyle.height !== undefined
+                            ? `${bBoxAnnotatorStyle.height}px`
+                            : undefined,
                 }}
                 ref={bBoxAnnotatorRef}
                 onMouseDown={mouseDownHandler}
@@ -293,9 +319,17 @@ const BBoxAnnotator = React.forwardRef<any, Props>(
                 <div
                     className={classes.imageFrame}
                     style={{
-                        width: `${imageFrameStyle.width}px`,
-                        height: `${imageFrameStyle.height}px`,
-                        backgroundImage: `url(${imageFrameStyle.backgroundImageSrc})`,
+                        width:
+                            imageFrameStyle.width !== undefined
+                                ? `${imageFrameStyle.width}px`
+                                : undefined,
+                        height:
+                            imageFrameStyle.height !== undefined
+                                ? `${imageFrameStyle.height}px`
+                                : undefined,
+                        backgroundImage: imageFrameStyle.backgroundImageSrc
+                            ? `url(${imageFrameStyle.backgroundImageSrc})`
+                            : undefined,
                     }}
                 >
                     {status === 'hold' || status === 'input' ? <BBoxSelector rectangle={rect} /> : null}
