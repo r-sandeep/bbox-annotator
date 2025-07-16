@@ -359,11 +359,13 @@ const BBoxAnnotator = React.forwardRef<any, Props>(
                             }}
                             key={entry.id}
                             onMouseDown={(e) => {
-                                if (e.button !== 2 && status === 'free') {
+                                if (e.button !== 2 && (status === 'free' || status === 'input')) {
                                     e.stopPropagation();
                                     const pos = crop(e.pageX, e.pageY);
                                     setDraggingId(entry.id);
                                     setDragOffset({ x: pos.x - entry.left, y: pos.y - entry.top });
+                                    setPointer(null);
+                                    setOffset(null);
                                     setStatus('drag');
                                 }
                             }}
