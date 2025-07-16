@@ -16,10 +16,11 @@ interface Props {
     inputMethod: 'text' | 'select';
     labels?: string | string[];
     onSubmit: (label: string) => void;
+    defaultValue?: string;
 }
-const LabelBox = React.forwardRef<any, Props>(({ inputMethod, ...props }, forwardedRef) => {
+const LabelBox = React.forwardRef<any, Props>(({ inputMethod, defaultValue = '', ...props }, forwardedRef) => {
     const classes = useStyles(props);
-    const [value, setValue] = useState('');
+    const [value, setValue] = useState(defaultValue);
     const changeHandler = (e: React.ChangeEvent<HTMLInputElement> | React.ChangeEvent<HTMLSelectElement>) => {
         setValue(e.target.value);
         if (inputMethod === 'select') {
@@ -47,8 +48,9 @@ const LabelBox = React.forwardRef<any, Props>(({ inputMethod, ...props }, forwar
                     ref={forwardedRef}
                     onChange={changeHandler}
                     onMouseDown={(e) => e.stopPropagation()}
+                    value={value}
                 >
-                    <option>choose an item</option>
+                    <option value="">choose an item</option>
                     {labels.map((label) => (
                         <option key={label} value={label}>
                             {label}
