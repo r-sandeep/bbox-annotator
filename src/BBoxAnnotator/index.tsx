@@ -542,6 +542,7 @@ const BBoxAnnotator = React.forwardRef<any, Props>(
                                     top={entry.height + borderWidth}
                                     left={-borderWidth}
                                     labels={labels}
+                                    defaultValue={entry.label}
                                     onSubmit={submitLabel}
                                     ref={labelInputRef}
                                 />
