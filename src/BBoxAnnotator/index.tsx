@@ -433,6 +433,10 @@ const BBoxAnnotator = React.forwardRef<any, Props>(
                                     }}
                                     onClick={() => {
                                         setEntries(entries.filter((e) => e.id !== entry.id));
+                                        if (editingId === entry.id) {
+                                            setEditingId(null);
+                                            setStatus('free');
+                                        }
                                     }}
                                 >
                                     <div
@@ -554,4 +558,5 @@ const BBoxAnnotator = React.forwardRef<any, Props>(
         );
     },
 );
+BBoxAnnotator.displayName = 'BBoxAnnotator';
 export default BBoxAnnotator;
