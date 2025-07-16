@@ -62,6 +62,9 @@ The `BBoxAnnotator` Component takes the following props in order to control it's
  * `onChange: (entries: { left: number; top: number; width: number; height: number; label: string }[]) => void`: Callback containing list of annotated objects. Gets triggered when adding an annotation or removing one.
  * `labels?: string | string[]`: List of labels to annotate, if any are known in advance (only used with inputMethod `select`).
  * `borderWidth?: number`: Width of bounding box border in pixels.
- * `initialEntries?: { left: number; top: number; width: number; height: number; label: string }[]`: Load existing annotations so they can be edited.
+* `initialEntries?: { left: number; top: number; width: number; height: number; label: string }[]`: Load existing annotations so they can be edited.
 
-Boxes can be repositioned after creation by dragging them with the mouse.\n## Local examples\nRun `npm run examples` and open the served page to try interactive examples located in the `examples` folder.
+Boxes can be repositioned after creation by dragging them with the mouse.
+
+## Local examples
+Run `npm run examples` to start a dev server serving the content of the `examples` folder. Open the printed address in your browser, or set `OPEN_BROWSER=true` to automatically launch it when supported.
