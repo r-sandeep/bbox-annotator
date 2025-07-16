@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { createUseStyles } from 'react-jss';
 
 const useStyles = createUseStyles({
@@ -21,6 +21,10 @@ interface Props {
 const LabelBox = React.forwardRef<any, Props>(({ inputMethod, defaultValue = '', ...props }, forwardedRef) => {
     const classes = useStyles(props);
     const [value, setValue] = useState(defaultValue);
+
+    useEffect(() => {
+        setValue(defaultValue);
+    }, [defaultValue]);
     const changeHandler = (e: React.ChangeEvent<HTMLInputElement> | React.ChangeEvent<HTMLSelectElement>) => {
         setValue(e.target.value);
         if (inputMethod === 'select') {
