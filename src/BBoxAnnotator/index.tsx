@@ -57,13 +57,17 @@ const BBoxAnnotator = React.forwardRef<any, Props>(
             if (initialEntries && initialEntries.length) {
                 setEntries(
                     initialEntries.map((entry) => ({
-                        ...entry,
                         id: uuid(),
                         showCloseButton: false,
+                        label: entry.label,
+                        left: Math.round(entry.left / multiplier),
+                        top: Math.round(entry.top / multiplier),
+                        width: Math.round(entry.width / multiplier),
+                        height: Math.round(entry.height / multiplier),
                     })),
                 );
             }
-        }, [initialEntries]);
+        }, [initialEntries, multiplier]);
         const [status, setStatus] = useState<'free' | 'input' | 'hold' | 'drag' | 'resize'>('free');
         const [bBoxAnnotatorStyle, setBboxAnnotatorStyle] = useState<{ width?: number; height?: number }>({});
         const [imageFrameStyle, setImageFrameStyle] = useState<{
@@ -201,7 +205,6 @@ const BBoxAnnotator = React.forwardRef<any, Props>(
                     case 'hold':
                         updateRectangle(e.pageX, e.pageY);
                         setStatus('input');
-                        labelInputRef.current?.focus();
                         break;
                     case 'drag':
                         setStatus('free');
@@ -219,6 +222,12 @@ const BBoxAnnotator = React.forwardRef<any, Props>(
             window.addEventListener('mouseup', mouseUpHandler);
             return () => window.removeEventListener('mouseup', mouseUpHandler);
         }, [status, labelInputRef, draggingId, dragOffset, resizingId, resizingCorner, resizeStart, resizeBox]);
+
+        useEffect(() => {
+            if (status === 'input') {
+                labelInputRef.current?.focus();
+            }
+        }, [status]);
 
         const addEntry = (label: string) => {
             setEntries([...entries, { ...rect, label, id: uuid(), showCloseButton: false }]);
